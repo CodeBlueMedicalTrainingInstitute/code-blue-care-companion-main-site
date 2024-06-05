@@ -934,7 +934,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, linear-gradient(to right, #00ce9a, #1c58ff), transparent 15%);
+  background: color-mix(in srgb, linear-gradient(to right, #00ce9a, #000a8b), transparent 15%);
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 55%);
 }
 
