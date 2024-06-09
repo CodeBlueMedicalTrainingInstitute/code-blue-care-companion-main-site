@@ -1246,9 +1246,9 @@ section,
 }
 
 .features-details .features-item .content {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(14, 167, 255, 0.281);
   backdrop-filter: blur(10px); 
-  color: rgba(0, 0, 0, 0.4); 
+  color: rgb(0, 0, 0); 
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1261,15 +1261,19 @@ section,
 }
 
 .features-details .features-item .more-btn {
-  background-color: var(--accent-color);
+  background: linear-gradient(to right, #00b7ff, #000a8b);
   color: var(--contrast-color);
   padding: 6px 30px;
-  border-radius: 6px;
+  border-radius: 50px;
   transition: 0.3s;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-details .features-item .more-btn:hover {
-  background-color: linear-gradient(to right, #00f260, #0575e6);
+  background: linear-gradient(to right, #14ffff, #0575e6);
 }
 
 .features-details .features-item ul {
@@ -1314,17 +1318,26 @@ section,
 }
 
 .services .service-item {
-  background-color: var(--contrast-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  background: linear-gradient(135deg, #005bea, #00c6fb); /* Vibrant blue gradient */
+  border: none; /* 1px solid color-mix(in srgb, var(--default-color), transparent 85%); */
   height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   transition: 0.3s;
   border-radius: 10px;
   display: flex;
+  flex-direction: column; /* Stacked layout by default */
+}
+
+.service-item:hover {
+  background: linear-gradient(135deg, #0575e6, #14ffff);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .services .service-item .icon {
   font-size: 32px;
+  font-weight: bold; /* Make icons bold */
+  color: #14ffff; /* Set icon color */
   border-radius: 10px;
   position: relative;
   margin-right: 25px;
@@ -1337,7 +1350,7 @@ section,
 }
 
 .services .service-item h3 {
-  color: color-mix(in srgb, var(--heading-color), transparent 25%);
+  color: #ffffff; /* Make text color white */
   font-weight: 700;
   font-size: 22px;
   transition: 0.3s;
@@ -1345,70 +1358,99 @@ section,
 
 .services .service-item p {
   margin-bottom: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #e0e0e0; /* Light gray text color */
   transition: 0.3s;
 }
 
 .services .service-item .read-more {
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
   transition: 0.3s;
   font-size: 14px;
+  color: #ffffff; /* Button text color */
+  background-color: #005bea; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
 }
 
 .services .service-item .read-more i {
   margin-left: 10px;
 }
 
+.services .service-item .read-more:hover {
+  color: #005bea; /* Button text color on hover */
+  background-color: #14ffff; /* Button background color on hover */
+}
+
 .services .service-item.item-cyan .icon {
-  color: #0dcaf0;
-  border: 1px solid #0dcaf0;
-  background: rgba(13, 202, 240, 0.1);
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
+  background: rgba(20, 255, 255, 0.1);
 }
 
 .services .service-item.item-orange .icon {
-  color: #fd7e14;
-  border: 1px solid #fd7e14;
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
   background: rgba(253, 126, 20, 0.1);
 }
 
 .services .service-item.item-teal .icon {
-  color: #20c997;
-  border: 1px solid #20c997;
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
   background: rgba(32, 201, 151, 0.1);
 }
 
 .services .service-item.item-red .icon {
-  color: #df1529;
-  border: 1px solid #df1529;
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
   background: rgba(223, 21, 4, 0.1);
 }
 
 .services .service-item.item-indigo .icon {
-  color: #6610f2;
-  border: 1px solid #6610f2;
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
   background: rgba(102, 16, 242, 0.1);
 }
 
 .services .service-item.item-pink .icon {
-  color: #f3268c;
-  border: 1px solid #f3268c;
+  color: #14ffff; /* Override specific item icon color */
+  border: 1px solid #14ffff;
   background: rgba(243, 38, 140, 0.1);
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 2px 25px
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .services .service-item:hover h3 {
-  color: var(--heading-color);
+  color: #ffffff; /* Keep text color white on hover */
 }
 
 .services .service-item:hover p {
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: #f0f0f0; /* Lighter gray text color on hover */
 }
+
+/* Hide the learn more button and description on mobile devices */
+@media (max-width: 767px) {
+  .services .service-item p,
+  .services .service-item .read-more {
+    display: none;
+  }
+}
+
+/* Align icons to the left side of the text on desktop */
+@media (min-width: 768px) {
+  .services .service-item {
+    flex-direction: row; /* Horizontal layout on desktop */
+    align-items: center;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # More Features Section
