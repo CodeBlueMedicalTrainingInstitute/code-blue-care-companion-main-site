@@ -1083,7 +1083,7 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  background: linear-gradient(to right, #00b7ff, #000a8b);
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1105,7 +1105,7 @@ section,
 }
 
 .about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: linear-gradient(to right, #14ffff, #0575e6);
   padding-right: 19px;
 }
 
@@ -1150,9 +1150,21 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
+//*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+/* Keyframes for the fade-up effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
 .features .nav-tabs {
   border: 0;
 }
@@ -1171,14 +1183,17 @@ section,
   border: 0;
   padding: 30px;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 50px;
   display: flex;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .features .nav-link i {
-  background-color: var(--contrast-color);
-  color: var(--accent-color);
+  background-color: rgba(0, 10, 139, 0.75);
+  color: #14ffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1188,8 +1203,7 @@ section,
   font-size: 22px;
   flex-shrink: 0;
   border-radius: 50px;
-  box-shadow: 0 2px 4px
-    color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .features .nav-link h4 {
@@ -1205,15 +1219,23 @@ section,
 }
 
 .features .nav-link:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+  background: rgba(20, 255, 255, 0.8);
 }
 
 .features .nav-link.active {
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  background: #14ffff; /* Active tab color */
 }
 
 .features .tab-pane img {
-  border-radius: 15px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
+  transition: transform 0.3s;
+  animation: fadeInUp 1s ease-in-out; /* Apply fade-in-up animation */
+}
+
+.features .tab-pane img:hover {
+  transform: scale(1.05);
 }
 
 /*--------------------------------------------------------------
@@ -1224,10 +1246,12 @@ section,
 }
 
 .features-details .features-item .content {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); 
+  color: rgba(0, 0, 0, 0.4); 
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .features-details .features-item h3 {
@@ -1241,10 +1265,11 @@ section,
   color: var(--contrast-color);
   padding: 6px 30px;
   border-radius: 6px;
+  transition: 0.3s;
 }
 
 .features-details .features-item .more-btn:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: ;
 }
 
 .features-details .features-item ul {
@@ -1270,7 +1295,16 @@ section,
 
 .features-details .features-item img {
   border-radius: 15px;
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 0.3s;
+  box-shadow: 7px 7px 14px #bebebe, -7px -7px 14px #ffffff;
 }
+
+.features-details .features-item img:hover {
+  transform: scale(1.05);
+}
+
+
 
 /*--------------------------------------------------------------
 # Services Section
