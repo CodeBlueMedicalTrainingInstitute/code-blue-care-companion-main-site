@@ -1650,6 +1650,9 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 5px;
   overflow: hidden;
+  background-color: #f8f9fa; /* Light background for better readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1658,28 +1661,23 @@ section,
 
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px; /* Slightly larger for better visibility */
   line-height: 24px;
   margin: 0 30px 0 0;
-  transition: 0.3s;
+  transition: color 0.3s;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
-  padding-right: 5px;
-}
-
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: #000a8b; /* Primary color */
 }
 
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
 }
@@ -1695,21 +1693,21 @@ section,
   right: 20px;
   font-size: 16px;
   line-height: 0;
-  transition: 0.3s;
+  transition: transform 0.3s, color 0.3s;
   cursor: pointer;
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: #000a8b; /* Primary color */
 }
 
 .faq .faq-container .faq-active {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  background-color: color-mix(in srgb, #000a8b, transparent 97%); /* Primary color mix */
+  border-color: color-mix(in srgb, #000a8b, transparent 80%); /* Primary color mix */
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--accent-color);
+  color: #000a8b; /* Primary color */
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1721,8 +1719,52 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: #000a8b; /* Primary color */
 }
+
+/* Image styling */
+.faq-image-container img {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+  opacity: 1; /* Ensure the image is visible */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Fade-in effect for the image */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.faq .faq-image-container img {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Adjusting the layout for image on the left and FAQ on the right */
+@media (min-width: 992px) {
+  .faq .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .faq .col-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .faq .col-lg-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials Section

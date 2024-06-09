@@ -1,9 +1,6 @@
 /**
-* Template Name: QuickStart
-* Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
-* Updated: Jun 02 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Author: surgeafrica.co.ke
+* License: https://surgeafrica.co.ke/license/
 */
 
 (function() {
@@ -112,13 +109,36 @@
   });
 
   /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
+ * Frequently Asked Questions Toggle
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle');
+  const faqImage = document.getElementById('faq-image');
+  
+  faqItems.forEach((faqItem) => {
     faqItem.addEventListener('click', () => {
-      faqItem.parentNode.classList.toggle('faq-active');
+      const parentItem = faqItem.parentNode;
+      const isActive = parentItem.classList.contains('faq-active');
+      
+      // Close all active items
+      document.querySelectorAll('.faq-item.faq-active').forEach((activeItem) => {
+        activeItem.classList.remove('faq-active');
+        activeItem.querySelector('.faq-content').style.display = 'none';
+      });
+      
+      // If the clicked item was not active, activate it and update the image
+      if (!isActive) {
+        parentItem.classList.add('faq-active');
+        parentItem.querySelector('.faq-content').style.display = 'block';
+        
+        const newImage = parentItem.getAttribute('data-image');
+        faqImage.src = `assets/img/faq-images/${newImage}`;
+      }
     });
   });
+});
+
+  
 
   /**
    * Init swiper sliders
