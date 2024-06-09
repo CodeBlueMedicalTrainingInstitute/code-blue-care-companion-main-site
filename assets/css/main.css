@@ -2148,8 +2148,164 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Home Care Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+#about-home-care.home-care {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+#about-home-care .content {
+  margin-bottom: 40px; /* Add space below content */
+}
+
+#about-home-care .content h2 {
+  color: #000a8b;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#about-home-care .content p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#about-home-care .content button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #14ffff;
+  color: #000a8b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#about-home-care .content button:hover {
+  background-color: #000a8b;
+  color: #14ffff;
+}
+
+#about-home-care .content h3 {
+  color: #000a8b;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+#about-home-care .sidebar {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px; /* Add space below the sidebar */
+  margin-left: 30px; /* Add space to the left of the sidebar */
+}
+
+#about-home-care .sidebar h4 {
+  color: #000a8b;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#about-home-care .sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset default margin */
+}
+
+#about-home-care .sidebar ul li {
+  margin-bottom: 20px; /* Increase space between list items */
+}
+
+#about-home-care .sidebar ul li a {
+  color: #000a8b;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px; /* Add padding to links */
+  border-radius: 5px;
+}
+
+#about-home-care .sidebar ul li a:hover {
+  color: #14ffff;
+  background-color: #000a8b; /* Add background color on hover */
+}
+
+#about-home-care .call-to-action {
+  padding: 20px;
+  margin: 40px 0; /* Increase vertical space around call-to-action */
+  border: 2px solid #000a8b;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#about-home-care .call-to-action p {
+  color: #000a8b;
+  font-size: 18px;
+}
+
+#about-home-care .call-to-action a {
+  color: #000a8b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about-home-care .call-to-action a:hover {
+  color: #14ffff;
+}
+
+#about-home-care .faq {
+  margin: 40px 0; /* Increase space around FAQ section */
+}
+
+#about-home-care .faq h3 {
+  color: #000a8b;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about-home-care .faq .faq-item {
+  margin-bottom: 20px;
+}
+
+#about-home-care .faq .faq-item h4 {
+  color: #000a8b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#about-home-care .faq .faq-item p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#about-home-care .services {
+  margin-top: 40px; /* Increase space above services */
+}
+
+#about-home-care .service-item {
+  background-color: #14ffff;
+  color: #000a8b;
+  padding: 20px;
+  border-radius: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+#about-home-care .service-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#about-home-care .service-item a {
+  color: #000a8b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#about-home-care .service-item a:hover {
+  color: #ffffff;
 }
