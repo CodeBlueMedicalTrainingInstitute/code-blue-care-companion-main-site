@@ -1150,7 +1150,7 @@ section,
   }
 }
 
-//*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 /* Keyframes for the fade-up effect */
@@ -1269,7 +1269,7 @@ section,
 }
 
 .features-details .features-item .more-btn:hover {
-  background-color: ;
+  background-color: linear-gradient(to right, #00f260, #0575e6);
 }
 
 .features-details .features-item ul {
