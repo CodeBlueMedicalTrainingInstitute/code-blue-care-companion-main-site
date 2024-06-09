@@ -2197,9 +2197,10 @@ section,
 #about-home-care .sidebar {
   background-color: #f1f1f1;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 24px;
   margin-bottom: 30px; /* Add space below the sidebar */
   margin-left: 30px; /* Add space to the left of the sidebar */
+  box-shadow: #000a8b;
 }
 
 #about-home-care .sidebar h4 {
