@@ -454,7 +454,11 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  background: linear-gradient(to right, rgba(5, 118, 230, 0.459), rgba(0, 242, 97, 0.507));
+  background: linear-gradient(
+    to right,
+    rgba(5, 118, 230, 0.459),
+    rgba(0, 242, 97, 0.507)
+  );
   color: white;
   font-size: 14px;
   padding-bottom: 50px;
@@ -651,7 +655,8 @@ h6 {
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -662,7 +667,6 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
-
 
 /*--------------------------------------------------------------
 # Preloader
@@ -885,7 +889,7 @@ section,
 }
 
 .hero h1 span {
-  color: #000a8b
+  color: #000a8b;
   /*color: var(--accent-color);*/
 }
 
@@ -1186,9 +1190,9 @@ section,
   border-radius: 50px;
   display: flex;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1); 
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .features .nav-link i {
@@ -1203,7 +1207,7 @@ section,
   font-size: 22px;
   flex-shrink: 0;
   border-radius: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .features .nav-link h4 {
@@ -1247,8 +1251,8 @@ section,
 
 .features-details .features-item .content {
   background-color: rgba(14, 167, 255, 0.281);
-  backdrop-filter: blur(10px); 
-  color: rgb(0, 0, 0); 
+  backdrop-filter: blur(10px);
+  color: rgb(0, 0, 0);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1308,8 +1312,6 @@ section,
   transform: scale(1.05);
 }
 
-
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1318,7 +1320,11 @@ section,
 }
 
 .services .service-item {
-  background: linear-gradient(135deg, #005bea, #00c6fb); /* Vibrant blue gradient */
+  background: linear-gradient(
+    135deg,
+    #005bea,
+    #00c6fb
+  ); /* Vibrant blue gradient */
   border: none; /* 1px solid color-mix(in srgb, var(--default-color), transparent 85%); */
   height: 100%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1424,7 +1430,8 @@ section,
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 2px 25px color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .services .service-item:hover h3 {
@@ -1450,7 +1457,6 @@ section,
     align-items: center;
   }
 }
-
 
 /*--------------------------------------------------------------
 # More Features Section
@@ -1702,8 +1708,16 @@ section,
 }
 
 .faq .faq-container .faq-active {
-  background-color: color-mix(in srgb, #000a8b, transparent 97%); /* Primary color mix */
-  border-color: color-mix(in srgb, #000a8b, transparent 80%); /* Primary color mix */
+  background-color: color-mix(
+    in srgb,
+    #000a8b,
+    transparent 97%
+  ); /* Primary color mix */
+  border-color: color-mix(
+    in srgb,
+    #000a8b,
+    transparent 80%
+  ); /* Primary color mix */
 }
 
 .faq .faq-container .faq-active h3 {
@@ -1764,7 +1778,6 @@ section,
     max-width: 66.6667%;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Testimonials Section
