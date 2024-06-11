@@ -1,7 +1,7 @@
 /**
 * PHP Email Form Validation - v3.7
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
+* URL: https://surgeafrica.co.ke/php-email-form/
+* Author: Surgeafrica.co.ke
 */
 (function () {
   "use strict";

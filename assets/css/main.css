@@ -999,6 +999,7 @@ section,
 .featured-services .service-item {
   position: relative;
   padding-top: 20px;
+  border-radius: 20px;
 }
 
 .featured-services .service-item .icon {
