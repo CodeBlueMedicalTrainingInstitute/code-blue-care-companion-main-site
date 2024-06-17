@@ -789,7 +789,7 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: red;
 }
 
 /*--------------------------------------------------------------
@@ -894,7 +894,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #ffffff;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -937,11 +937,12 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(
+  background: linear-gradient(to right, #14ffff, #0575e6);
+  /*background: color-mix(
     in srgb,
-    linear-gradient(to right, #00ce9a, #000a8b),
+    linear-gradient(to right, #0575e6, #14ffff),
     transparent 15%
-  );
+  );*/
   box-shadow: 0 8px 28px
     color-mix(in srgb, var(--accent-color), transparent 55%);
 }
@@ -950,12 +951,12 @@ section,
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--default-color);
+  color: #14ffff;
   font-weight: 600;
 }
 
 .hero .btn-watch-video i {
-  color: var(--accent-color);
+  color: #14ffff;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -2346,7 +2347,7 @@ section,
 
 .contact-option i {
   font-size: 3rem;
-  color: #007BFF;
+  color: #007bff;
   margin-bottom: 1rem;
 }
 
@@ -2362,31 +2363,37 @@ section,
 }
 
 /* Home Care Form */
-#home-care-form-section, #next-step-form-section {
+#home-care-form-section,
+#next-step-form-section {
   padding: 3rem 0;
 }
 
-#home-care-form-section h2, #next-step-form-section h2 {
+#home-care-form-section h2,
+#next-step-form-section h2 {
   font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
 }
 
-#home-care-form-section p, #next-step-form-section p {
+#home-care-form-section p,
+#next-step-form-section p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 2rem;
 }
 
-#home-care-form-section .form-group, #next-step-form-section .form-group {
+#home-care-form-section .form-group,
+#next-step-form-section .form-group {
   margin-bottom: 1.5rem;
 }
 
-#home-care-form-section .form-control, #next-step-form-section .form-control {
+#home-care-form-section .form-control,
+#next-step-form-section .form-control {
   border-radius: 5px;
 }
 
-#home-care-form-section .btn-primary, #next-step-form-section .btn-primary {
+#home-care-form-section .btn-primary,
+#next-step-form-section .btn-primary {
   background: linear-gradient(to right, #14ffff, #000a8b);
   border: none;
   border-radius: 5px;
